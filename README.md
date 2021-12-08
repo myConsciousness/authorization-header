@@ -6,12 +6,15 @@
 <!-- TOC -->
 
 - [1. About](#1-about)
-  - [1.1. Introduction](#11-introduction)
-    - [1.1.1. Install Library](#111-install-library)
-    - [1.1.2. Import It](#112-import-it)
-    - [1.1.3. Use AuthorizationHeader](#113-use-authorizationheader)
-  - [1.2. License](#12-license)
-  - [1.3. More Information](#13-more-information)
+  - [1.1. Supported](#11-supported)
+    - [1.1.1. Authorization Header](#111-authorization-header)
+    - [1.1.2. Authorization Type](#112-authorization-type)
+  - [1.2. Introduction](#12-introduction)
+    - [1.2.1. Install Library](#121-install-library)
+    - [1.2.2. Import It](#122-import-it)
+    - [1.2.3. Use AuthorizationHeader](#123-use-authorizationheader)
+  - [1.3. License](#13-license)
+  - [1.4. More Information](#14-more-information)
 
 <!-- /TOC -->
 
@@ -20,9 +23,30 @@
 `AuthorizationHeader` is an open-sourced Dart library.</br>
 With `AuthorizationHeader`, you can easily manage authorization header on your application.
 
-## 1.1. Introduction
+The `AuthorizationHeader` library provides a common features for generating authorization header for use with Basic or Bearer authorization.</br>
+Proxy-Authorization for proxies is also supported.
 
-### 1.1.1. Install Library
+By using the `AuthorizationHeader` library, there is no need for redundant implementation or research to generate the authorization header anymore!
+
+## 1.1. Supported
+
+### 1.1.1. Authorization Header
+
+| Name                |
+| ------------------- |
+| Authorization       |
+| Proxy-Authorization |
+
+### 1.1.2. Authorization Type
+
+| Name   | RFC                                                       |
+| ------ | --------------------------------------------------------- |
+| Basic  | [RFC 7617](https://datatracker.ietf.org/doc/html/rfc7617) |
+| Bearer | [RFC 6750](https://datatracker.ietf.org/doc/html/rfc6750) |
+
+## 1.2. Introduction
+
+### 1.2.1. Install Library
 
 **_With Dart:_**
 
@@ -36,13 +60,13 @@ With `AuthorizationHeader`, you can easily manage authorization header on your a
  flutter pub add authorization_header
 ```
 
-### 1.1.2. Import It
+### 1.2.2. Import It
 
 ```dart
 import 'package:authorization_header/auth_header.dart';
 ```
 
-### 1.1.3. Use AuthorizationHeader
+### 1.2.3. Use AuthorizationHeader
 
 ```dart
 import 'package:authorization_header/auth_header.dart';
@@ -66,7 +90,7 @@ void main() async {
 }
 ```
 
-## 1.2. License
+## 1.3. License
 
 ```license
 Copyright (c) 2021, Kato Shinya. All rights reserved.
@@ -74,7 +98,7 @@ Use of this source code is governed by a
 BSD-style license that can be found in the LICENSE file.
 ```
 
-## 1.3. More Information
+## 1.4. More Information
 
 `AuthorizationHeader` was designed and implemented by **_Kato Shinya_**.
 
