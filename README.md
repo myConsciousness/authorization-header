@@ -23,8 +23,7 @@
 `AuthorizationHeader` is an open-sourced Dart library.</br>
 With `AuthorizationHeader`, you can easily manage authorization header on your application.
 
-The `AuthorizationHeader` library provides a common features for generating authorization header for use with Basic or Bearer authorization.</br>
-Proxy-Authorization for proxies is also supported.
+The `AuthorizationHeader` library provides a common features for generating authorization header for use with Basic or Bearer authorization. Proxy-Authorization for proxies is also supported.
 
 By using the `AuthorizationHeader` library, there is no need for redundant implementation or research to generate the authorization header anymore!
 
