@@ -4,7 +4,7 @@
 
 // ignore_for_file: avoid_print
 
-import 'package:auth_header/auth_header.dart';
+import 'package:authorization_header/auth_header.dart';
 import 'package:http/http.dart' as http;
 
 void main() async {

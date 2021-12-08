@@ -3,10 +3,10 @@
 // BSD-style license that can be found in the LICENSE file.
 
 // Project imports:
-import 'package:auth_header/src/auth.dart';
-import 'package:auth_header/src/auth_header.dart';
-import 'package:auth_header/src/strategy/basic_auth_token_strategy.dart';
-import 'package:auth_header/src/strategy/bearer_auth_token_strategy.dart';
+import 'package:authorization_header/src/auth.dart';
+import 'package:authorization_header/src/auth_header.dart';
+import 'package:authorization_header/src/strategy/basic_auth_token_strategy.dart';
+import 'package:authorization_header/src/strategy/bearer_auth_token_strategy.dart';
 
 /// This class represents proxy authorization.
 ///

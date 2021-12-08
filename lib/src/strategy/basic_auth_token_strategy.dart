@@ -6,7 +6,7 @@
 import 'dart:convert';
 
 // Project imports:
-import 'package:auth_header/src/strategy/auth_token_strategy.dart';
+import 'package:authorization_header/src/strategy/auth_token_strategy.dart';
 
 /// This class represents a strategy for token generation in the Basic authorization method.
 class BasicAuthTokenStrategy extends AuthTokenStrategy {

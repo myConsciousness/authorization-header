@@ -3,7 +3,7 @@
 // BSD-style license that can be found in the LICENSE file.
 
 // Project imports:
-import 'package:auth_header/src/strategy/auth_token_strategy.dart';
+import 'package:authorization_header/src/strategy/auth_token_strategy.dart';
 
 /// This class represents a strategy for token generation in the Bearer authorization method.
 class BearerAuthTokenStrategy extends AuthTokenStrategy {

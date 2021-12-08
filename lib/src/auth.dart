@@ -3,9 +3,9 @@
 // BSD-style license that can be found in the LICENSE file.
 
 // Project imports:
-import 'package:auth_header/src/auth_header.dart';
-import 'package:auth_header/src/default_auth.dart';
-import 'package:auth_header/src/proxy_auth.dart';
+import 'package:authorization_header/src/auth_header.dart';
+import 'package:authorization_header/src/default_auth.dart';
+import 'package:authorization_header/src/proxy_auth.dart';
 
 /// This abstract class provides the ability to generate authorization header
 /// according to the authorization method.
@@ -29,7 +29,7 @@ import 'package:auth_header/src/proxy_auth.dart';
 /// **_Example:_**
 ///
 /// ```dart
-/// import 'package:auth_header/auth_header.dart';
+/// import 'package:authorization_header/auth_header.dart';
 /// import 'package:http/http.dart' as http;
 ///
 /// void main() async {
