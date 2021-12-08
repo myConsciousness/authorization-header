@@ -1,39 +1,86 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+**_A most easily usable authorization header management library in Dart!_**
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+[![pub package](https://img.shields.io/pub/v/auth_header.svg)](https://pub.dev/packages/auth_header)
+[![Dart](https://github.com/myConsciousness/auth-header/actions/workflows/dart.yml/badge.svg)](https://github.com/myConsciousness/auth-header/actions/workflows/dart.yml)
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
+<!-- TOC -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+- [1. About](#1-about)
+  - [1.1. Introduction](#11-introduction)
+    - [1.1.1. Install Library](#111-install-library)
+    - [1.1.2. Import It](#112-import-it)
+    - [1.1.3. Use AuthHeader](#113-use-authheader)
+  - [1.2. License](#12-license)
+  - [1.3. More Information](#13-more-information)
 
-## Features
+<!-- /TOC -->
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+# 1. About
 
-## Getting started
+`AuthHeader` is an open-sourced Dart library.</br>
+With `AuthHeader`, you can easily manage authorization header on your application.
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+## 1.1. Introduction
 
-## Usage
+### 1.1.1. Install Library
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+**_With Dart:_**
 
-```dart
-const like = 'sample';
+```terminal
+ dart pub add auth_header
 ```
 
-## Additional information
+**_With Flutter:_**
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+```terminal
+ flutter pub add auth_header
+```
+
+### 1.1.2. Import It
+
+```dart
+import 'package:auth_header/auth_header.dart';
+```
+
+### 1.1.3. Use AuthHeader
+
+```dart
+import 'package:auth_header/auth_header.dart';
+import 'package:http/http.dart' as http;
+
+void main() async {
+  /// You can switch between Default and Proxy in the constructor.
+  final authHeader = Auth.of().bearer(token: 'test_token');
+  final proxyAuthHeader = Auth.ofProxy().bearer(token: 'test_token');
+
+  print(authHeader); // -> name: Authorization, value: Bearer test
+  print(proxyAuthHeader); // -> name: Proxy-Authorization, value: Bearer test
+
+  await http.post(
+    Uri.parse('https://test.com'),
+    headers: {
+      authHeader.name: authHeader.value,
+      proxyAuthHeader.name: proxyAuthHeader.value,
+    },
+  );
+}
+
+```
+
+## 1.2. License
+
+```license
+Copyright (c) 2021, Kato Shinya. All rights reserved.
+Use of this source code is governed by a
+BSD-style license that can be found in the LICENSE file.
+```
+
+## 1.3. More Information
+
+`AuthHeader` was designed and implemented by **_Kato Shinya_**.
+
+- [Creator Profile](https://github.com/myConsciousness)
+- [License](https://github.com/myConsciousness/auth-header/blob/main/LICENSE)
+- [API Document](https://pub.dev/documentation/auth_header/latest/auth_header/auth_header-library.html)
+- [Release Note](https://github.com/myConsciousness/auth-header/releases)
+- [Bug Report](https://github.com/myConsciousness/auth-header/issues)
