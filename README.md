@@ -68,6 +68,8 @@ import 'package:authorization_header/auth_header.dart';
 
 ### 1.2.3. Use AuthorizationHeader
 
+`AuthorizationHeader` can be used in conjunction with the [http](https://pub.dev/packages/http) package as follows.
+
 ```dart
 import 'package:authorization_header/auth_header.dart';
 import 'package:http/http.dart' as http;

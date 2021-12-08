@@ -7,7 +7,7 @@
 /// The name of the header will be set to [name],
 /// and the token that will be the value of the header will be set to [value].
 ///
-/// It can be used in conjunction with the http package as follows.
+/// It can be used in conjunction with the [http](https://pub.dev/packages/http) package as follows.
 ///
 /// **_Example:_**
 ///

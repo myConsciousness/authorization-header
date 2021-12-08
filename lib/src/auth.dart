@@ -7,7 +7,7 @@ import 'package:authorization_header/src/auth_header.dart';
 import 'package:authorization_header/src/default_auth.dart';
 import 'package:authorization_header/src/proxy_auth.dart';
 
-/// This abstract class provides the ability to generate authorization header
+/// This abstract class provides the features to generate authorization header
 /// according to the authorization method.
 ///
 /// There are two types of authorization header: **_Authorization_** and **_Proxy-Authorization_** for proxies,
