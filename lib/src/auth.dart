@@ -29,7 +29,7 @@ import 'package:authorization_header/src/proxy_auth.dart';
 /// **_Example:_**
 ///
 /// ```dart
-/// import 'package:authorization_header/auth_header.dart';
+/// import 'package:authorization_header/authorization_header.dart';
 /// import 'package:http/http.dart' as http;
 ///
 /// void main() async {
