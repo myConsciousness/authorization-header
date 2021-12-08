@@ -6,7 +6,7 @@
 import 'package:flutter_test/flutter_test.dart';
 
 // Project imports:
-import 'package:authorization_header/auth_header.dart';
+import 'package:authorization_header/authorization_header.dart';
 
 void main() {
   group('Test DefaultAuthorization.', () {
