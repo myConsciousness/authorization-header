@@ -1,7 +1,7 @@
 **_A most easily usable authorization header management library in Dart!_**
 
 [![pub package](https://img.shields.io/pub/v/authorization_header.svg)](https://pub.dev/packages/authorization_header)
-[![Dart](https://github.com/myConsciousness/auth-header/actions/workflows/dart.yml/badge.svg)](https://github.com/myConsciousness/auth-header/actions/workflows/dart.yml)
+[![Dart](https://github.com/myConsciousness/authorization-header/actions/workflows/dart.yml/badge.svg)](https://github.com/myConsciousness/authorization-header/actions/workflows/dart.yml)
 
 <!-- TOC -->
 
@@ -104,7 +104,7 @@ BSD-style license that can be found in the LICENSE file.
 `AuthorizationHeader` was designed and implemented by **_Kato Shinya_**.
 
 - [Creator Profile](https://github.com/myConsciousness)
-- [License](https://github.com/myConsciousness/auth-header/blob/main/LICENSE)
+- [License](https://github.com/myConsciousness/authorization-header/blob/main/LICENSE)
 - [API Document](https://pub.dev/documentation/authorization_header/latest/authorization_header/authorization_header-library.html)
-- [Release Note](https://github.com/myConsciousness/auth-header/releases)
-- [Bug Report](https://github.com/myConsciousness/auth-header/issues)
+- [Release Note](https://github.com/myConsciousness/authorization-header/releases)
+- [Bug Report](https://github.com/myConsciousness/authorization-header/issues)
