@@ -4,13 +4,13 @@
 
 // ignore_for_file: avoid_print
 
-import 'package:authorization_header/authorization_header.dart';
+import 'package:auth_header/auth_header.dart';
 import 'package:http/http.dart' as http;
 
 void main() async {
   /// You can switch between Default and Proxy in the constructor.
-  final authHeader = Authorization.of().bearer(token: 'test_token');
-  final proxyAuthHeader = Authorization.ofProxy().bearer(token: 'test_token');
+  final authHeader = Auth.of().bearer(token: 'test_token');
+  final proxyAuthHeader = Auth.ofProxy().bearer(token: 'test_token');
 
   print(authHeader); // -> name: Authorization, value: Bearer test
   print(proxyAuthHeader); // -> name: Proxy-Authorization, value: Bearer test

@@ -4,4 +4,4 @@
 
 library authorization_header;
 
-export 'package:authorization_header/src/authorization.dart';
+export 'package:auth_header/src/auth.dart';

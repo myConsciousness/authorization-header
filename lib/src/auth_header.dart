@@ -32,9 +32,9 @@
 ///   );
 /// }
 /// ```
-class AuthorizationHeader {
-  /// Returns the new instance of [AuthorizationHeader] based on arguments.
-  AuthorizationHeader.from({
+class AuthHeader {
+  /// Returns the new instance of [AuthHeader] based on arguments.
+  AuthHeader.from({
     required this.name,
     required this.value,
   });
@@ -52,9 +52,7 @@ class AuthorizationHeader {
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
 
-    return other is AuthorizationHeader &&
-        other.name == name &&
-        other.value == value;
+    return other is AuthHeader && other.name == name && other.value == value;
   }
 
   @override

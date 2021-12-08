@@ -6,43 +6,43 @@
 import 'package:flutter_test/flutter_test.dart';
 
 // Project imports:
-import 'package:authorization_header/authorization_header.dart';
+import 'package:auth_header/auth_header.dart';
 
 void main() {
-  group('Test DefaultAuthorization.', () {
+  group('Test DefaultAutho.', () {
     test('Test basic.', () {
-      final header = Authorization.of().basic(
+      final header = Auth.of().basic(
         username: 'test',
         password: 'test_password',
       );
 
-      expect(header.name, 'Authorization');
+      expect(header.name, 'Autho');
       expect(header.value, 'Basic dGVzdDp0ZXN0X3Bhc3N3b3Jk');
     });
 
     test('Test bearer.', () {
-      final header = Authorization.of().bearer(token: 'test');
+      final header = Auth.of().bearer(token: 'test');
 
-      expect(header.name, 'Authorization');
+      expect(header.name, 'Autho');
       expect(header.value, 'Bearer test');
     });
   });
 
-  group('Test ProxyAuthorization.', () {
+  group('Test ProxyAutho.', () {
     test('Test basic.', () {
-      final header = Authorization.ofProxy().basic(
+      final header = Auth.ofProxy().basic(
         username: 'test',
         password: 'test_password',
       );
 
-      expect(header.name, 'Proxy-Authorization');
+      expect(header.name, 'Proxy-Autho');
       expect(header.value, 'Basic dGVzdDp0ZXN0X3Bhc3N3b3Jk');
     });
 
     test('Test bearer.', () {
-      final header = Authorization.ofProxy().bearer(token: 'test');
+      final header = Auth.ofProxy().bearer(token: 'test');
 
-      expect(header.name, 'Proxy-Authorization');
+      expect(header.name, 'Proxy-Autho');
       expect(header.value, 'Bearer test');
     });
   });
