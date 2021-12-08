@@ -39,19 +39,19 @@ With `AuthorizationHeader`, you can easily manage authorization header on your a
 ### 1.1.2. Import It
 
 ```dart
-import 'package:authorization_header/authorization_header.dart';
+import 'package:authorization_header/auth_header.dart';
 ```
 
 ### 1.1.3. Use AuthorizationHeader
 
 ```dart
-import 'package:authorization_header/authorization_header.dart';
+import 'package:authorization_header/auth_header.dart';
 import 'package:http/http.dart' as http;
 
 void main() async {
   /// You can switch between Default and Proxy in the constructor.
-  final authHeader = Authorization.of().bearer(token: 'test_token');
-  final proxyAuthHeader = Authorization.ofProxy().bearer(token: 'test_token');
+  final authHeader = Auth.of().bearer(token: 'test_token');
+  final proxyAuthHeader = Auth.ofProxy().bearer(token: 'test_token');
 
   print(authHeader); // -> name: Authorization, value: Bearer test
   print(proxyAuthHeader); // -> name: Proxy-Authorization, value: Bearer test
