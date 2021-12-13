@@ -1,7 +1,9 @@
 **_A most easily usable authorization header management library in Dart!_**
 
 [![pub package](https://img.shields.io/pub/v/authorization_header.svg)](https://pub.dev/packages/authorization_header)
-[![Dart](https://github.com/myConsciousness/authorization-header/actions/workflows/dart.yml/badge.svg)](https://github.com/myConsciousness/authorization-header/actions/workflows/dart.yml)
+[![codecov](https://codecov.io/gh/myConsciousness/authorization-header/branch/main/graph/badge.svg?token=3PS9LSWBWT)](https://codecov.io/gh/myConsciousness/authorization-header)
+[![Analyzer](https://github.com/myConsciousness/authorization-header/actions/workflows/analyzer.yml/badge.svg)](https://github.com/myConsciousness/authorization-header/actions/workflows/analyzer.yml)
+[![Test](https://github.com/myConsciousness/authorization-header/actions/workflows/test.yml/badge.svg)](https://github.com/myConsciousness/authorization-header/actions/workflows/test.yml)
 
 <!-- TOC -->
 
