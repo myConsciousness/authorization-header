@@ -1,22 +1,16 @@
 name: authorization_header
 description: AuthorizationHeader is an open-sourced Dart library. With AuthorizationHeader, you can easily manage authorization header on your application.
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/myConsciousness/authorization-header
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=1.17.0"
-
-dependencies:
-  flutter:
-    sdk: flutter
+  sdk: ">=2.15.0 <3.0.0"
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
   flutter_lints: ^1.0.0
   import_sorter: ^4.6.0
   http: ^0.13.4
+  test: ^1.19.5
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
