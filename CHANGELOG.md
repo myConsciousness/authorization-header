@@ -1,5 +1,9 @@
 # Release Note
 
+## 1.0.3
+
+- Fixed minor feature.
+
 ## 1.0.2
 
 - Supported more multiple platforms.
